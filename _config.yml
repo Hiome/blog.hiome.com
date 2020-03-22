@@ -1,0 +1,5 @@
+plugins: [jekyll-paginate]
+
+permalink: /:categories/:title/
+markdown: kramdown
+paginate: 5

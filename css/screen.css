@@ -1,0 +1,300 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font: 16px helvetica, arial, clean, sans-serif;
+  color: #404040;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px auto 30px auto;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 22px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  line-height: 1.5em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #0074D9;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+  color: #6F3CD1;
+}
+
+h1 a {
+  color: #404040;
+}
+
+a:not([href*='hiome.com']):not([href^='#']):not([href^='/']):after {
+  font-size: 0.5rem;
+  font-weight: 500;
+  line-height: 0.6;
+  margin-left: 1px;
+  content: '↗';
+  vertical-align: text-top;
+  opacity: 0.5;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+#navbar {
+  float: right;
+}
+
+#navbar a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  text-align: center;
+  margin-top: -3px;
+}
+
+.title a, #navbar a{
+  color: #aeb4bb;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.title a:hover, #navbar a:hover {
+  background-color: #f4f4f4;
+  color: #636e7c;
+  text-decoration: none;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 15px;
+  min-width: 300px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  line-height: 140%;
+}
+
+.title {
+  color: #404040;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  float: left;
+  vertical-align: top;
+}
+
+.site .title a {
+  color: #404040;
+}
+
+@media only screen and (max-width: 340px) {
+  .site {
+    padding: 0 9px
+  }
+}
+
+#followme {
+  font-size: 80%;
+  color: #666;
+  margin-top: 40px;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+#footer {
+  font-size: 70%;
+  color: #aeb4bb;
+  padding-top: 45px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#footer a:hover g {
+  fill: #404040;
+}
+
+.post {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.content > .post:first-child {
+  border-top: none;
+  margin-top: 30px;
+}
+
+.meta {
+  color: #aeb4bb;
+  font-size: 80%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.markdown {
+  font-family: serif;
+  margin-top: 2em;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.markdown p, .markdown h2 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown > p:first-child {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.footnotes {
+  font-size: 90%;
+}
+
+.padded {
+  margin: 40px auto;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+img.photograph {
+  margin-top: 40px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+img.photograph:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.twitter-tweet {
+  margin: 0 auto;
+  margin-top: 30px !important;
+}
+
+/* standard */
+
+ul, ol {
+  margin-left: 1.35em;
+}
+
+pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+  overflow: scroll;
+}
+
+code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  font-size: 85%;
+  padding: 0 .2em;
+}
+
+pre code {
+  border: none;
+}
+
+cite {
+  padding-left: 20px;
+  color: #aaa;
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 50px;
+}
+
+blockquote {
+  padding-left: 15px;
+  border-left: 4px solid #eee;
+  font-style: italic;
+  color: #808080;
+}
+
+p.caption {
+  margin-top: 0;
+  font-size: 80%;
+  color: #b2b2b2;
+  text-align: center;
+  font-style: italic;
+}
+
+.pagination {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.currentPage {
+  font-family: cursive;
+  color: #aeb4bb;
+}
+
+a.hidden {
+  visibility: hidden;
+}
+
+a.newer {
+  float: left;
+  z-index: 2;
+}
+
+a.older {
+  float: right;
+  z-index: 2;
+}

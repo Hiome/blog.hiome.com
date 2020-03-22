@@ -1,0 +1,34 @@
+---
+layout: default
+title: Hiome Blog
+---
+
+{% for post in paginator.posts %}
+  <div class="post">
+    <p class="meta">{{ post.date | date: '%B %d, %Y' }}</p>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="markdown">
+      {{ post.content }}
+    </div>
+  </div>
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="newer">&#x2190; &nbsp; Newer</a>
+  {% else %}
+    <a href="#" class="newer hidden">&#x2190; &nbsp; Newer</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="older">Older &nbsp; &#x2192;</a>
+  {% else %}
+    <a href="#" class="older hidden">Older &nbsp; &#x2192;</a>
+  {% endif %}
+
+  {% unless paginator.total_pages == 1 %}
+    <span class="currentPage">Page {{ paginator.page }}</span>
+  {% endunless %}
+</div>
+<div class="clear">&nbsp;</div>
