@@ -27,6 +27,10 @@ Good question. Admittedly this is partially why this status update has taken so 
 
 Possibly! A couple companies have reached out to discuss acquisition of the IP. After some conversations, we decided those weren't good fits, but in principle, we are open to the idea. If you think you'd be a good fit to run the business or can purchase the IP at a fair price, we're open to chatting.
 
+## Will you open source Hiome?
+
+This is something I've strongly considered. I'd love to help the community build DIY sensors, but Hiome involves a lot of parts. Open sourcing and documenting all of it in a useful format, while also building a community and managing contributions, is a significant committment that I'm not sure I can make right now. Having said that, if you're interested in helping build an open source version of Hiome, please [join us on Guilded](https://www.guilded.gg/i/2DRj1yQp) and I'll reconsider if there's enough demand.
+
 ## How can I stay notified if you change your mind or build something else?
 
 Thanks for the interest! As much as I'm unsure about Twitter's future, it is currently still the best way to broadcast updates, so you can follow [@hiomeai](https://twitter.com/hiomeai) or [@neilgupta](https://twitter.com/neilgupta) for the latest news. We'll also post updates here if anything changes.
